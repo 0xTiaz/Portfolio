@@ -10,10 +10,10 @@ export const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">
-              Passionate Web Developer & Tech Creator
+              Junior react developer.
             </h3>
-            <p className="text-muted-foreground">Text with my info</p>
-            <p className="text-muted-foreground">Another Text with my info</p>
+            <p className="text-muted-foreground">Are you interested in my designs?</p>
+            <p className="text-muted-foreground">Don't doubt to get in touch with me</p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
               <a href="#contact" className="cosmic-button">
@@ -38,9 +38,8 @@ export const AboutSection = () => {
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">Web Developement</h4>
-                  <p className="text-muted-foreground">
-                    Somethings that i know
-                  </p>
+                  {/* <p className="text-muted-foreground">
+                  </p> */}
                 </div>
               </div>
             </div>
@@ -51,9 +50,8 @@ export const AboutSection = () => {
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">UI/UX</h4>
-                  <p className="text-muted-foreground">
-                    Somethings that i know
-                  </p>
+                  {/* <p className="text-muted-foreground">
+                  </p> */}
                 </div>
               </div>
             </div>
@@ -64,9 +62,8 @@ export const AboutSection = () => {
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">Project Management</h4>
-                  <p className="text-muted-foreground">
-                    Somethings that i know
-                  </p>
+                  {/* <p className="text-muted-foreground">
+                  </p> */}
                 </div>
               </div>
             </div>

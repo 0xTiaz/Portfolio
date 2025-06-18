@@ -11,24 +11,50 @@ import {
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
+
+//import { ToastifyContainer, toast } from "react-toastify";
 
 export const ContactSection = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const SERVICE_ID = "service_xltuyy7";
+  const TEMPLATE_ID = "template_j3qgmnf";
+  const PUBLIC_KEY = "UAK-QvV225MpjdfCi";
+
   const handleSumbit = (e) => {
     e.preventDefault();
+
+    emailjs
+      .sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
+      .then(() => {
+        toast({
+          title: "Message sent!",
+          description: "Thank you for your message, I'll get back to you soon.",
+        });
+        setFormData({ name: "", email: "", message: "" });
+      })
+      .catch(() =>
+        toast({
+          title: "Message sent!",
+          description: "Thank you for your message, I'll get back to you soon.",
+        })
+      );
 
     setIsSubmitting(true);
 
     setTimeout(() => {
-      toast({
-        title: "Message sent!",
-        description: "Thank you for your message, I'll get back to you soon.",
-      });
       setIsSubmitting(false);
     }, 1500);
   };
+
   return (
     <section id="contact" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-x-5xl">
@@ -44,7 +70,7 @@ export const ContactSection = () => {
           <div className="space-y-8">
             <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
             <div className="space-y-6 justify-center">
-              <div className="flex items-start space-x-4">
+              <div className="flex items-center space-x-4">
                 <div className="p-3 rounded-full bg-primary/10">
                   <Mail className="h-6 w-6 text-primary" />
                 </div>
@@ -87,13 +113,16 @@ export const ContactSection = () => {
             <div className="pt-8">
               <h4 className="font-medium mb-4">Connect With Me</h4>
               <div className="flex space-x-4 justify-center">
-                <a href="#" target="_blank">
+                <a
+                  href="https://www.linkedin.com/in/kevin-soto-figueroa-abb76524b/"
+                  target="_blank"
+                >
                   <Linkedin />
                 </a>
                 <a href="#" target="_blank">
                   <Twitter />
                 </a>
-                <a href="#" target="_blank">
+                <a href="https://www.instagram.com/matidev.js/" target="_blank">
                   <Instagram />
                 </a>
                 <a href="#" target="_blank">
@@ -107,7 +136,7 @@ export const ContactSection = () => {
             onSubmit={handleSumbit}
           >
             <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
-            <form action="" className="space-y-6">
+            <form action="" className="space-y-6" onSubmit={handleSumbit}>
               <div>
                 <label
                   htmlFor="name"
@@ -120,8 +149,12 @@ export const ContactSection = () => {
                   id="name"
                   name="name"
                   required
+                  value={formData.name}
                   className="w-full px-4 py-3 rounded-md border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
                   placeholder="Matias Figueroa..."
+                  onChange={(e) =>
+                    setFormData({ ...formData, name: e.target.value })
+                  }
                 />
               </div>
               <div>
@@ -136,8 +169,12 @@ export const ContactSection = () => {
                   id="email"
                   name="email"
                   required
+                  value={formData.email}
                   className="w-full px-4 py-3 rounded-md border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
                   placeholder="john.doe@gmail.com"
+                  onChange={(e) =>
+                    setFormData({ ...formData, email: e.target.value })
+                  }
                 />
               </div>
               <div>
@@ -151,8 +188,12 @@ export const ContactSection = () => {
                   id="message"
                   name="message"
                   required
+                  value={formData.message}
                   className="w-full px-4 py-3 rounded-md border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none"
                   placeholder="Hello, I'd like to talk about..."
+                  onChange={(e) =>
+                    setFormData({ ...formData, message: e.target.value })
+                  }
                 />
               </div>
               <button

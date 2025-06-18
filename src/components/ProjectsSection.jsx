@@ -3,9 +3,9 @@ import { ArrowRight, ExternalLinkIcon, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful lnding page app using React and Tailwind",
-    image: "/public/projects/project1.png",
+    title: "CV Landing Page",
+    description: "My first page as CV using static html and css.",
+    image: "./src/assets/project1.png",
     tags: ["React", "TailWindCSS", "Superbase"],
     demoUrl: "#",
     githubUrl: "#",
@@ -76,9 +76,10 @@ export const ProjectsSection = () => {
 
         <div className="text-center mt-12">
           <a
-            href="#"
+            href="https://github.com/0xTiaz"
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
+            tooltip="Link is broken"
           >
             Ckech my GitHub <ArrowRight size={16} />
           </a>
