@@ -1,4 +1,5 @@
 import { Briefcase, Code, User } from "lucide-react";
+import resume from '../assets/CV_Matias_Figueroa';
 
 export const AboutSection = () => {
   return (
@@ -16,7 +17,7 @@ export const AboutSection = () => {
             <p className="text-muted-foreground">Don't doubt to get in touch with me</p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-              <a href="#contact" className="cosmic-button">
+              <a href={resume} download='resume' className="cosmic-button">
                 {" "}
                 Get in touch
               </a>
