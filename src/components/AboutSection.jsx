@@ -17,13 +17,14 @@ export const AboutSection = () => {
             <p className="text-muted-foreground">Don't doubt to get in touch with me</p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-              <a href={resume} download='resume' className="cosmic-button">
+              <a href="#contact" className="cosmic-button">
                 {" "}
                 Get in touch
               </a>
 
               <a
-                href="#contact"
+                href={resume}
+                download='resume'
                 className="px-5 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
                 {" "}
