@@ -1,11 +1,13 @@
 import { ArrowRight, ExternalLinkIcon, Github } from "lucide-react";
+import project1 from "@/assets/project1.png"
+import project2 from "@/assets/project2.png"
 
 const projects = [
   {
     id: 1,
     title: "Portfolio",
     description: "First Protfolio using ReactJS deployed from GitHub with Vercel.",
-    image: "@/assets/project1.png",
+    image: project1,
     tags: ["React", "TailWindCSS", "Lucide React",],
     demoUrl: "https://portfolio-q9le3f263-matias-figueroas-projects.vercel.app/",
     githubUrl: "https://github.com/0xTiaz/Portfolio",
@@ -14,7 +16,7 @@ const projects = [
     id: 2,
     title: "Current: E-Commerce",
     description: "Modern styled e-commerce deployed from GitHub with Vercel.",
-    image: "@/assets/project2.png",
+    image: project2,
     tags: ["React", "TailWindCSS", "Lucide React",],
     demoUrl: "https://e-commerce-chi-black-15.vercel.app/",
     githubUrl: "https://github.com/0xTiaz/e-commerce",
