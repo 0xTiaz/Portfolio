@@ -3,12 +3,21 @@ import { ArrowRight, ExternalLinkIcon, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "CV Landing Page",
-    description: "My first page as CV using static html and css.",
+    title: "Portfolio",
+    description: "First Protfolio using ReactJS deployed from GitHub with Vercel.",
     image: "./src/assets/project1.png",
-    tags: ["React", "TailWindCSS", "Superbase"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["React", "TailWindCSS", "Lucide React",],
+    demoUrl: "https://portfolio-q9le3f263-matias-figueroas-projects.vercel.app/",
+    githubUrl: "https://github.com/0xTiaz/Portfolio",
+  },
+  {
+    id: 2,
+    title: "Current: E-Commerce",
+    description: "Modern styled e-commerce deployed from GitHub with Vercel.",
+    image: "./src/assets/project2.png",
+    tags: ["React", "TailWindCSS", "Lucide React",],
+    demoUrl: "https://e-commerce-chi-black-15.vercel.app/",
+    githubUrl: "https://github.com/0xTiaz/e-commerce",
   },
 ];
 
@@ -29,7 +38,7 @@ export const ProjectsSection = () => {
           {projects.map((project, key) => (
             <div
               key={key}
-              className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
+              className="group bg-card rounded-lg overflow-hidden shadow-xs backdrop-blur card-hover"
             >
               <div className="h-48 overflow-hidden">
                 <img
