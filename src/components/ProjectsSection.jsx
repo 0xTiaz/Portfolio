@@ -17,15 +17,15 @@ const projects = [
   },
   {
     id: 2,
-    title: "Current: E-Commerce",
+    title: "On Hold: E-Commerce",
     description: "Modern styled e-commerce deployed from GitHub with Vercel.",
     image: project2,
-    tags: ["React", "TailWindCSS", "Lucide React"],
+    tags: ["React", "TailWindCSS", "Lucide React", "API"],
     demoUrl: "https://e-commerce-chi-black-15.vercel.app/",
     githubUrl: "https://github.com/0xTiaz/e-commerce",
   },
   {
-    id: 2,
+    id: 3,
     title: "Current: Dashboard with Mongo API",
     description: "Dashboard with api connection to mongoDB",
     image: project3,
