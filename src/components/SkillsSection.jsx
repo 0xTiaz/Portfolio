@@ -1,4 +1,4 @@
-import { use, useState } from "react";
+import { useState } from "react";
 import { cn } from "@/lib/utils";
 
 const skills = [
@@ -7,19 +7,25 @@ const skills = [
   { name: "JavaScript", level: 90, category: "frontend" },
   { name: "React", level: 90, category: "frontend" },
   { name: "TailWind", level: 85, category: "frontend" },
-  // { name: "", level: 90, category: "frontend" },
   // { name: "", level: 80, category: "frontend" },
 
   //  Back-End
   { name: "C#", level: 80, category: "backend" },
   { name: "VisualBasic", level: 75, category: "backend" },
-  { name: "Node.js", level: 70, category: "backend" },
-  { name: "MongoDB", level: 65, category: "backend" },
-  { name: "SQL", level: 80, category: "backend" },
+  { name: "Node.js", level: 50, category: "backend" },
+  { name: "MongoDB", level: 70, category: "backend" },
+  { name: "SQL", level: 90, category: "backend" },
+  { name: "API", level: 55, category: "backend" },
 
   //Tools
+  {
+    name: "Postman",
+    level: 65,
+    category: "tools",
+    test: "https://matiasfigueroa-1441068.postman.co/workspace/Matias-Figueroa's-Workspace~e28132e0-0c9b-401b-8e27-7e7c60b9ddda/collection/46598418-f5b0b9bd-4298-42db-bbb5-c43d4a73553c?action=share&creator=46598418",
+  },
   { name: "Git/GitHub", level: 90, category: "tools" },
-  { name: "Figma", level: 70, category: "tools" },
+  { name: "Figma", level: 80, category: "tools" },
   { name: "VS Code", level: 85, category: "tools" },
   { name: "SAP B1", level: 95, category: "tools" },
   { name: "Active Directory", level: 85, category: "tools" },

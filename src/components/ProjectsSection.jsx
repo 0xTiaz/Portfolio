@@ -1,15 +1,18 @@
 import { ArrowRight, ExternalLinkIcon, Github } from "lucide-react";
-import project1 from "@/assets/project1.png"
-import project2 from "@/assets/project2.png"
+import project1 from "@/assets/project1.png";
+import project2 from "@/assets/project2.png";
+import project3 from "@/assets/project3.png";
 
 const projects = [
   {
     id: 1,
     title: "Portfolio",
-    description: "First Protfolio using ReactJS deployed from GitHub with Vercel.",
+    description:
+      "First Protfolio using ReactJS deployed from GitHub with Vercel.",
     image: project1,
-    tags: ["React", "TailWindCSS", "Lucide React",],
-    demoUrl: "https://portfolio-q9le3f263-matias-figueroas-projects.vercel.app/",
+    tags: ["React", "TailWindCSS", "Lucide React"],
+    demoUrl:
+      "https://portfolio-q9le3f263-matias-figueroas-projects.vercel.app/",
     githubUrl: "https://github.com/0xTiaz/Portfolio",
   },
   {
@@ -17,9 +20,18 @@ const projects = [
     title: "Current: E-Commerce",
     description: "Modern styled e-commerce deployed from GitHub with Vercel.",
     image: project2,
-    tags: ["React", "TailWindCSS", "Lucide React",],
+    tags: ["React", "TailWindCSS", "Lucide React"],
     demoUrl: "https://e-commerce-chi-black-15.vercel.app/",
     githubUrl: "https://github.com/0xTiaz/e-commerce",
+  },
+  {
+    id: 2,
+    title: "Current: Dashboard with Mongo API",
+    description: "Dashboard with api connection to mongoDB",
+    image: project3,
+    tags: ["React", "TailWindCSS", "MongoDB", "API"],
+    // demoUrl: "",
+    githubUrl: "https://github.com/0xTiaz/dashboard-mongo",
   },
 ];
 
