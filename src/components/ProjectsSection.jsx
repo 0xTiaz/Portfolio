@@ -35,9 +35,18 @@ const projects = [
   {
     id: 3,
     title: "Current: Dashboard with Mongo API",
-    description: "Dashboard with api connection to mongoDB",
+    description:
+      "Dashboard with api connection to mongoDB deployed to Railway and Vercel.",
     image: project3,
-    tags: ["React", "TailWindCSS", "MongoDB", "API"],
+    tags: [
+      "React",
+      "TailWindCSS",
+      "MongoDB",
+      "API",
+      "Axios",
+      "Vercel",
+      "Railway",
+    ],
     // demoUrl: "",
     githubUrl: "https://github.com/0xTiaz/dashboard-mongo",
   },
