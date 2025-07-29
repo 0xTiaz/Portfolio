@@ -17,12 +17,20 @@ const projects = [
   },
   {
     id: 2,
-    title: "On Hold: E-Commerce",
-    description: "Modern styled e-commerce deployed from GitHub with Vercel.",
+    title: "GYM Landing Page",
+    description:
+      "Modern styled GYM Landing Page with animations like carousels, animated text and cards.",
     image: project2,
-    tags: ["React", "TailWindCSS", "Lucide React", "API"],
-    demoUrl: "https://e-commerce-chi-black-15.vercel.app/",
-    githubUrl: "https://github.com/0xTiaz/e-commerce",
+    tags: [
+      "React",
+      "TailWindCSS",
+      "React-Icons",
+      "React-Router-Dom",
+      "GSAP",
+      "Motion-Framer",
+    ],
+    demoUrl: "https://crossfit-bullbox-365.vercel.app/",
+    githubUrl: "https://github.com/0xTiaz/crossfit-bullbox-365.git",
   },
   {
     id: 3,
